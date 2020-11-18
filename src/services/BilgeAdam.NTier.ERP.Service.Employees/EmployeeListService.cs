@@ -35,8 +35,8 @@ namespace BilgeAdam.NTier.ERP.Service.Employees
 
         public List<EmployeeListDto> Search(string firstName, string lastName)
         {
-            return repo.Where(f => f.FirstName.StartsWith(firstName.Trim()) && 
-                                   f.LastName.StartsWith(lastName.Trim()))
+            return repo.Where(f => f.FirstName.StartsWith(firstName) && 
+                                   f.LastName.StartsWith(lastName))
                        .Select(s => new EmployeeListDto
                        {
                            FullName = s.FirstName + " " + s.LastName,
