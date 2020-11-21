@@ -1,4 +1,6 @@
-﻿using BilgeAdam.NTier.ERP.App.Employees;
+﻿using BilgeAdam.NTier.ERP.App.Auth;
+using BilgeAdam.NTier.ERP.App.Employees;
+using BilgeAdam.NTier.ERP.App.Models;
 using BilgeAdam.NTier.ERP.App.Products;
 using System;
 using System.Collections.Generic;
@@ -32,6 +34,13 @@ namespace BilgeAdam.NTier.ERP.App
             var f = new frmEmployees();
             f.MdiParent = this;
             f.Show();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            var f = new frmLogin();
+            f.ShowDialog();
+            Text += $" - {Session.CurrentUser}";
         }
     }
 }

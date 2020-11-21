@@ -39,6 +39,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.NTier.ERP.Dto.Emp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.NTier.ERP.Service.Employees", "src\services\BilgeAdam.NTier.ERP.Service.Employees\BilgeAdam.NTier.ERP.Service.Employees.csproj", "{A774A55B-0CF6-4F9F-BCDF-D900F60926CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.NTier.ERP.Service.Auth", "src\services\BilgeAdam.NTier.ERP.Service.Auth\BilgeAdam.NTier.ERP.Service.Auth.csproj", "{4FE07B31-A52A-439D-A000-C18FAB9884D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.NTier.ERP.Dto.Users", "src\transform\BilgeAdam.NTier.ERP.Dto.Users\BilgeAdam.NTier.ERP.Dto.Users.csproj", "{E4422A95-C46C-476C-A75D-9B3A7DB87E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.NTier.ERP.Common", "src\BilgeAdam.NTier.ERP.Common\BilgeAdam.NTier.ERP.Common.csproj", "{BCE773E3-8C7F-4BEE-B098-2E3420D13108}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +99,18 @@ Global
 		{A774A55B-0CF6-4F9F-BCDF-D900F60926CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A774A55B-0CF6-4F9F-BCDF-D900F60926CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A774A55B-0CF6-4F9F-BCDF-D900F60926CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE07B31-A52A-439D-A000-C18FAB9884D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE07B31-A52A-439D-A000-C18FAB9884D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE07B31-A52A-439D-A000-C18FAB9884D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE07B31-A52A-439D-A000-C18FAB9884D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4422A95-C46C-476C-A75D-9B3A7DB87E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4422A95-C46C-476C-A75D-9B3A7DB87E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4422A95-C46C-476C-A75D-9B3A7DB87E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4422A95-C46C-476C-A75D-9B3A7DB87E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE773E3-8C7F-4BEE-B098-2E3420D13108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE773E3-8C7F-4BEE-B098-2E3420D13108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE773E3-8C7F-4BEE-B098-2E3420D13108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE773E3-8C7F-4BEE-B098-2E3420D13108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +131,9 @@ Global
 		{44935DAD-0951-4FC7-8821-E7FB1FBC9F6F} = {D4223462-1AD0-498D-BFB2-7CC7040E439C}
 		{346C1C75-C08A-4CA0-9159-32EC123F0E60} = {7440AEE9-60C6-40E4-983D-A439656033A6}
 		{A774A55B-0CF6-4F9F-BCDF-D900F60926CE} = {2DA5EBF6-2E44-4195-8A22-D528FFF511FE}
+		{4FE07B31-A52A-439D-A000-C18FAB9884D9} = {2DA5EBF6-2E44-4195-8A22-D528FFF511FE}
+		{E4422A95-C46C-476C-A75D-9B3A7DB87E81} = {7440AEE9-60C6-40E4-983D-A439656033A6}
+		{BCE773E3-8C7F-4BEE-B098-2E3420D13108} = {BE7CBF1E-DD38-464A-9E60-81AD987AFD6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69B9F065-2679-4B22-A678-31CEFC11AF83}

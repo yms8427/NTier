@@ -83,7 +83,7 @@
             // msnProduct_List
             // 
             this.msnProduct_List.Name = "msnProduct_List";
-            this.msnProduct_List.Size = new System.Drawing.Size(180, 22);
+            this.msnProduct_List.Size = new System.Drawing.Size(135, 22);
             this.msnProduct_List.Text = "Ürün Listesi";
             this.msnProduct_List.Click += new System.EventHandler(this.msnProduct_List_Click);
             // 
@@ -98,7 +98,7 @@
             // msbEmployees_List
             // 
             this.msbEmployees_List.Name = "msbEmployees_List";
-            this.msbEmployees_List.Size = new System.Drawing.Size(180, 22);
+            this.msbEmployees_List.Size = new System.Drawing.Size(154, 22);
             this.msbEmployees_List.Text = "Personel Listesi";
             this.msbEmployees_List.Click += new System.EventHandler(this.msbEmployees_List_Click);
             // 
@@ -111,7 +111,8 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "BilgeAdam ERP Uygulaması";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

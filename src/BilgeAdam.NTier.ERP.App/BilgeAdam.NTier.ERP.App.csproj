@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auth\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees\frmEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Session.cs" />
     <Compile Include="Products\frmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Auth\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees\frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +119,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\services\BilgeAdam.NTier.ERP.Service.Auth\BilgeAdam.NTier.ERP.Service.Auth.csproj">
+      <Project>{4FE07B31-A52A-439D-A000-C18FAB9884D9}</Project>
+      <Name>BilgeAdam.NTier.ERP.Service.Auth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\services\BilgeAdam.NTier.ERP.Service.Employees\BilgeAdam.NTier.ERP.Service.Employees.csproj">
       <Project>{A774A55B-0CF6-4F9F-BCDF-D900F60926CE}</Project>
       <Name>BilgeAdam.NTier.ERP.Service.Employees</Name>
@@ -124,6 +138,10 @@
     <ProjectReference Include="..\transform\BilgeAdam.NTier.ERP.Dto.Products\BilgeAdam.NTier.ERP.Dto.Products.csproj">
       <Project>{441D2582-D1EF-4615-B076-D19F2387E2F2}</Project>
       <Name>BilgeAdam.NTier.ERP.Dto.Products</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\transform\BilgeAdam.NTier.ERP.Dto.Users\BilgeAdam.NTier.ERP.Dto.Users.csproj">
+      <Project>{E4422A95-C46C-476C-A75D-9B3A7DB87E81}</Project>
+      <Name>BilgeAdam.NTier.ERP.Dto.Users</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
